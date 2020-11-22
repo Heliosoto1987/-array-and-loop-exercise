@@ -57,10 +57,8 @@ function pushHtml(array, selectorHtml) {
           array[index].completed = true;
           positiveAccumulator += 1
           accumulatorNegative += -1
-      }else {
-          array[index].completed = true;
           li.item(index).classList.add('through');
-  }
+      }
 //------------------------Printing in html of the results of the property completed------------------//
           firstH1.innerHTML = `<h3>Tienes: ${array.length} tareas</h3>` + `<h3>Completadas = ${positiveAccumulator}</h3>` + `<h3> Faltan = ${accumulatorNegative}</h3>`
         })
